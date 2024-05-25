@@ -41,8 +41,11 @@ function dragEnter() {
 
 function dragLeave() {
     console.log("leave");
+    this.className = "empty";
 }
 
 function dragDrop() {
     console.log("drop");
+    this.className = "empty";
+    this.appendChild(fill); 
 }
